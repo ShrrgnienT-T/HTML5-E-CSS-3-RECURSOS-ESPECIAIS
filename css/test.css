@@ -1,0 +1,17 @@
+@keyframes botao {
+    from{
+        margin-left: 0;
+   
+    }
+    to{
+        margin-left: 50%;
+        
+    }
+    }
+
+  
+button:hover{
+    animation: botao 1ms 0s 299999 reverse;
+   
+ 
+}
