@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novas Tags de Input</title>
+    <link rel="stylesheet" type="text/css" href="css/flex-itens-pt1.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!--[if lt IE 9]>
+	<script src="JS/html5shiv.js"></script>
+<![endif]-->
+<style>
+    #conteudo{
+        background: #dcdcdc;
+        height: 600px;
+        display: flex;
+        /* row |row-reverse |column-reverse */
+        flex-direction: row;
+        /* nowrap |wrap |wrap-reverse */
+        flex-wrap:nowrap;
+
+        /* flex-start | flex-end |center| space-between |space-around */
+        justify-content: space-around;
+        /* streth | center | flex-start | flex-end | baseline */
+        align-items: baseline;
+
+        }
+
+        .item{
+            /* width: 200px; */
+            height: 100px;
+            background: white;
+            border: 1px solid gray;
+            margin: 10px;
+            /* define a proporçao de espaço ocupado por um item */
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 200px;
+        }
+
+        .iten1{
+            /* flex-grow: 1; */
+            /* flex-shrink: 1; */
+        }
+        .iten2{
+            /* flex-grow: 1; */
+            /* flex-shrink: 2; */
+        }
+        .iten3{
+            /* flex-shrink: 5; */
+            /* flex-grow: 1; */
+        }
+        .iten4{
+            /* flex-grow: 1; */
+        }
+        
+        /* .ordem1{
+            order: 1;
+        }
+        .ordem2{
+            order: 2;
+        }
+        .ordem3{
+            order: 3;
+        }
+        .ordem4{
+            order: 4;
+        } */
+</style>
+
+
+</head>
+<body>
+    <h1>Flex</h1>
+    <div id="conteudo">
+        <div class="item  iten1" >01</div> 
+        <div class="item iten2">02</div> 
+        <div class="item iten3">03</div> 
+        <div class="item ">04</div> 
+        
+
+    </div>
+</body>
+</html>
