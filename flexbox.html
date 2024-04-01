@@ -4,13 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novas Tags de Input</title>
-    <link rel="stylesheet" type="text/css" href="css/flexbos.css">
+    <link rel="stylesheet" type="text/css" href="css/flexbox.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <!--[if lt IE 9]>
 	<script src="JS/html5shiv.js"></script>
 <![endif]-->
+<style>
+    #conteudo{
+        background: #dcdcdc;
+        height: 600px;
+        display: flex;
+        /* row |row-reverse |column-reverse */
+        flex-direction: row;
+        /* nowrap |wrap |wrap-reverse */
+        flex-wrap:nowrap;
+
+        /* flex-start | flex-end |center| space-between |space-around */
+        justify-content: space-around;
+        /* streth | center | flex-start | flex-end | baseline */
+        align-items: baseline;
+
+        }
+
+        .item{
+            /* width: 100px;
+            height: 100px; */
+            background: white;
+            border: 1px solid gray;
+            margin: 10px;
+        }
+</style>
+
+
 </head>
 <body>
     <h1>Flex</h1>
+    <div id="conteudo">
+        <div class="item" style="padding-top: 60px;">01</div> 
+        <div class="item">02</div> 
+        <div class="item">03</div> 
+        <div class="item">04</div> 
+        <div class="item">05 <br> mais conteudo</div> 
+
+    </div>
 </body>
 </html>
